@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div>
+        <input type="password" class="password" id="password">
+        <span class="material-symbols-outlined" id="eye"  onclick="toggle()" >visibility</span>
+    </div>
+    
+
+    <script>
+
+        var show = true ;
+
+        function toggle(){
+            if(show){
+                document.getElementById("password").setAttribute("type","password")
+                show=false
+                document.getElementById("eye").style.backgroundColor="blue"
+            }
+            else{
+                document.getElementById("password").setAttribute("type","text")
+                show=true
+                document.getElementById("eye").style.backgroundColor="red"
+            }
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // example 1
+
+      //   let complete = true;
+
+      //   let promise = new Promise(function (resolve, reject) {
+      //     if (complete) {
+      //       resolve("I am successful");
+      //     } else {
+      //       reject("I am failed");
+      //     }
+      //   });
+
+      //   console.log("PROMISE -->", promise);
+
+      //example 2
+
+      // function prom(number) {
+      //   return new Promise(function (resolve, reject) {
+      //     if (number % 2 == 0) {
+      //       resolve("The number is even");
+      //     } else {
+      //       reject("THe number is odd");
+      //     }
+      //   });{}
+      // }
+
+      // prom(11)
+      //   .then((result) => {
+      //     console.log("RESULT -->", result);
+      //   })
+      //   .catch((error) => {
+      //     console.log("ERROR -->", error);
+      //   });
+
+function promp (number){
+  return new Promise (function(resolve,reject){
+    if (number%2==0){
+      resolve("the number is even")
+    }
+else{
+  reject ("the number is odd")
+}
+  })
+}
+
+promp(16).then((result)=>{console.log("result ---",result)}).catch((error)=>{console.log("error---",error)})
+
+    </script>
+  </body>
+</html>

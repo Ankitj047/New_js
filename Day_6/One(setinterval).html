@@ -1,0 +1,23 @@
+
+    <div id="counter"></div>
+
+
+
+    
+<script>
+       let intCount =  setInterval(test,10);
+
+let x = 1;
+
+    function test () {
+
+document.getElementById("counter").innerHTML=x
+
+if(x==200){
+    clearInterval(intCount);
+}
+        x++;
+    }
+
+
+</script>

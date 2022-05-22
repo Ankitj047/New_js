@@ -1,0 +1,23 @@
+
+<script>
+
+// var name="ankit jain"
+// console.log(name)
+
+//  localStorage.setItem("name display",name) // first kis name se stor krna he and second data 
+
+// localStorage.clear()
+
+// console.log(localStorage.getItem('name display'))   // for get the value which is set by localstorage set
+
+
+
+/*  data store in arr format  */
+
+let arr = ["amit","jain"]
+
+localStorage.setItem("name",JSON.stringify(arr))    //local me arr ko save ke liye json.stringyfy
+
+console.log(JSON.parse( localStorage.getItem("name",(arr) ))  )
+
+</script>

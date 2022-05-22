@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+   <div> <h1 onclick="tab1()"  id="tab1"  style="margin:10px">tab1</h1>
+    <button onclick="submit1()">submit1</button>
+</div>
+    <div><h1 onclick="tab2()" onclick="submit2()" id="tab2" style="margin:10px">tab2</h1>
+        <button onclick="submit2()">submit2</button>
+    </div>
+    <div><h1 onclick="tab3()" onclick="submit3()" id="tab3" style="margin:10px">tab3</h1>
+        <button onclick="submit3()">submit3</button>
+</div>
+  <div>  <h1 onclick="tab4()" onclick="submit4()" id="tab4" style="margin:10px">tab4</h1>
+    <button onclick="submit4()">submit4</button>
+</div>
+</body>
+
+
+<script>
+
+// constructor (){
+//     tab1:false,
+//     tab2: false,
+// }
+
+function tab1 (){
+    // location.reload();
+//     if(this.tab1==true){
+//     document.getElementById("tab1").innerHTML="Hi I am tab1"
+// }
+// else{
+//     document.write("wrong value")
+// }
+document.getElementById("tab1").innerHTML="Hi I am tab1"
+}
+
+
+function tab2 (){
+    document.getElementById("tab2").innerHTML="Hi I am tab2"
+}
+
+function tab3 (){
+    document.getElementById("tab3").innerHTML="Hi I am tab3"
+}
+
+function tab4 (){
+    document.getElementById("tab4").innerHTML="Hi I am tab4"
+}
+</script>
+
+</html>

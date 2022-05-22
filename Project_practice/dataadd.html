@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="data" >
+    <button onclick="dataadd()">Submit</button>
+    <table border="1px" >
+<thead>
+    <tr>
+        <td>Name</td>
+    </tr>
+</thead>
+<tbody id="root" ></tbody>
+    </table>
+<script>
+
+
+// data ko get kiya givendata me
+//then local storage me data he ya nhi check kiye arrdata me 
+//then arrdataa == null or data ko givendata ke equal kiya
+// if arrdata me data he to usko puch kiya, puch krne ke liye data array me hona chahiye isliye data ko array me convert kiya 
+// then data ko get kiya and table me print krvaya
+
+function dataadd() {
+   let givedata =  document.getElementById('data').value
+   let arrdata =  JSON.parse(localStorage.getItem("crud"));
+   
+   if (arrdata == null){
+       let data = [givedata]
+       arrdata = localStorage.setItem("crud",JSON.stringify(data))
+   } else {
+    arrdata.push(givedata)
+   localStorage.setItem("crud",JSON.stringify(arrdata))
+}
+//    console.log(givedata)
+// console.log(arrdata)
+// document.getElementById("root").innerHTML=arrdata
+document.getElementById('root').innerHTML=""
+for (key in arrdata)
+// console.log(arrdata[key])
+document.getElementById('root').innerHTML+=` <tr><td>${arrdata[key]}</td></tr>`
+}
+
+</script>
+
+</body>
+</html>

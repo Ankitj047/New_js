@@ -1,0 +1,128 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Ankit",
+      "Salary": 12000,
+      "designation": "Developer"
+    },
+    {
+      "id": 2,
+      "name": "Gorakh",
+      "Salary": 12000,
+      "designation": "Developer"
+    },
+    {
+      "name": "Amit",
+      "Salary": "13000",
+      "designation": "tester",
+      "id": 3
+    },
+    {
+      "name": "mostafa",
+      "Salary": "130000",
+      "designation": "tester",
+      "id": 4
+    },
+    {
+      "name": "mostafa",
+      "Salary": "130000",
+      "designation": "tester",
+      "id": 5
+    },
+    {
+      "name": "mostafa",
+      "Salary": "130000",
+      "designation": "tester",
+      "id": 6
+    },
+    {
+      "name": "abdul",
+      "Salary": "123456",
+      "designation": "designationadd",
+      "id": 7
+    },
+    {
+      "name": {},
+      "Salary": {},
+      "designation": {},
+      "id": 8
+    },
+    {
+      "name": {},
+      "Salary": {},
+      "designation": {},
+      "id": 9
+    },
+    {
+      "name": {},
+      "Salary": {},
+      "designation": {},
+      "id": 10
+    },
+    {
+      "name": {},
+      "Salary": {},
+      "designation": {},
+      "id": 11
+    },
+    {
+      "name": {},
+      "Salary": {},
+      "designation": {},
+      "id": 12
+    },
+    {
+      "name": "dsfsd",
+      "Salary": "2343",
+      "designation": "dsfdf",
+      "id": 13
+    },
+    {
+      "name": "wert",
+      "Salary": "34234",
+      "designation": "gfdgdfgdf",
+      "id": 14
+    }
+  ],
+  "city": [
+    {
+      "id": 1,
+      "name": "Pune"
+    },
+    {
+      "name": "Bombay",
+      "id": 2
+    },
+    {
+      "name": "Bombay",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "name": "Banglore"
+    }
+  ],
+  "state": [
+    {
+      "id": 1,
+      "name": "Maharashtra"
+    },
+    {
+      "id": 2,
+      "name": "Gujarat"
+    },
+    {
+      "id": 3,
+      "name": "MP"
+    },
+    {
+      "id": 4,
+      "name": "Karnataka"
+    }
+  ],
+  "country": {
+    "id": 1,
+    "name": "India"
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="name" />
+    <button onclick="nameadd()">Submit</button>
+    <h6 id="msg">error message</h6>
+
+    <table border="1px">
+      <thead>
+        <tr>
+          <td>Sno</td>
+          <td>name</td>
+          <td>Action</td>
+        </tr>
+      </thead>
+      <tbody id="root"></tbody>
+    </table>
+    </body>
+  <script>
+    let id = "";
+    selectdata();
+    function nameadd() {
+      document.getElementById("msg").innerHTML = "";
+      let myName = document.getElementById("name").value;
+      //   console.log(myName);
+      if (myName == "") {
+        document.getElementById("msg").innerHTML = "please enter name";
+      } else {
+        // console.log(myName);
+
+        if (id == "") {
+          let arr = JSON.parse(localStorage.getItem("crud"));
+          // console.log(arr)
+          if (arr == null) {
+            let data = [myName];
+            localStorage.setItem("crud", JSON.stringify(data));
+          } else {
+            arr.push(myName);
+            localStorage.setItem("crud", JSON.stringify(arr));
+          }
+          document.getElementById("name").value = "";
+          document.getElementById("msg").innerHTML = "data added";
+        } else {
+        }
+        selectdata()
+      }
+    }
+
+    function selectdata() {
+      let arr = JSON.parse(localStorage.getItem("crud"));
+      if (arr !== null) {
+        let html = "";
+        let Sno = 1;
+        for (let k in arr) {
+          html = html + `<tr><td>${k}</td><td>${arr[k]}</td><td><a href="javascript:void(0)" onclick="deletedata (${k})" >Delete</a></td></tr>`;
+        }
+        document.getElementById("root").innerHTML = html;
+      }
+    }
+
+    function deletedata (rid) {
+      // console.log("delte")
+      let arr = JSON.parse(localStorage.getItem("crud"));
+      arr.splice(rid,1)
+      localStorage.setItem("crud", JSON.stringify(arr));
+      selectdata()
+    }
+  </script>
+</html>

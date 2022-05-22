@@ -1,0 +1,41 @@
+[
+    {
+      "name": "Ankit Varia",
+      "age": "27",
+      "city": "Vadodara",
+      "country": [
+        {
+          "countryname": "India"
+        },
+        {
+          "countryname": "USA"
+        }
+      ]
+    },
+    {
+      "name": "Gorakh Kharat",
+      "age": "30",
+      "city": "Pune",
+      "country": [
+        {
+          "countryname": "India"
+        },
+        {
+          "countryname": "CANADA"
+        }
+      ]
+    },
+    {
+      "name": "ankit jain",
+      "age": "26",
+      "city": "udaipur",
+      "country": [
+        {
+          "countryname": "India"
+        },
+        {
+          "countryname": "CANADA"
+        }
+      ]
+    }
+  ]
