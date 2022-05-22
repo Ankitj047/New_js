@@ -8,7 +8,7 @@ fetch('./student.json')
     <td>${key.name}</td>
     <td>${key.age}</td>
     <td>${key.city}</td>
-    <td>${key.country.map((data)=>{(data.countryname)})}</td>
+  <td>${key.country.map((data)=>{console.log(data.countryname)})}</td> 
 </tr>` )
 
 }).catch((error)=>{console.log("error-->",error)})
