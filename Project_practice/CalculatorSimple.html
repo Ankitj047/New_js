@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>Calculator</div>
+    <input type="number" id="anumber" placeholder="Enter a number" /> Please
+    Enter number <br />
+    <br />
+    <input type="number" id="bnumber" placeholder="Enter a number" /> Please
+    Enter number <br />
+    <br />
+    <p id="output">Output</p>
+    <button onclick="Sum()">Sum</button>
+    <button onclick="Minus()">Minus</button>
+
+    <script>
+      function Sum() {
+        let firstnumber = document.getElementById("anumber").value;
+        let secondnumber = document.getElementById("bnumber").value;
+        const sumnumber = parseInt(firstnumber) + parseInt(secondnumber);
+
+        document.getElementById("output").innerHTML = sumnumber;
+      }
+function Minus() {    
+    let firstnumber = document.getElementById("anumber").value;
+        let secondnumber = document.getElementById("bnumber").value;
+
+        Minusnumber =   parseFloat(secondnumber)- parseInt(firstnumber)
+document.getElementById("output").innerHTML=Minusnumber
+
+    }
+
+    </script>
+  </body>
+</html>
