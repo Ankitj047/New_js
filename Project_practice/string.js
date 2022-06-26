@@ -17,6 +17,21 @@ reverseString("Hello World how is it outside");
 //   console.log("wrong");
 // }
 
+
+// with the help of loop
+
+// const str = "madam"
+
+// const length = str.length
+
+// for (i=0;i<length/2;i++){
+//     if(str[i] !== str[length-1-i] ){
+//      }
+// }
+
+// console.log("not a pallindrom")
+
+
 // count characters in word javascript
 
 function characte(str) {
